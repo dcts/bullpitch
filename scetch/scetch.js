@@ -1,16 +1,34 @@
 // GLOBAL VARIABLES
-let wSize = 400; // window size
+let wSize = 500 // window size
+let angle = 0;
+let vel = 0;
+let img;
+
+function preload() {
+  img = loadImage("scetch/res/wheel.png");
+}
 
 function setup() {
 	let myCanvas = createCanvas(wSize, wSize);
 	myCanvas.parent("main"); /* display scetch in html element with id "main"*/
-	instr = loadImage("scetch/res/wheel.png");
+  rectMode(CENTER);
 }
 
 function draw() {
-  background(240);
-	image(instr, 50, 50);
+  background(51);
+  angle += vel;
+  translate(250,250);
+  rotate(angle);
+  fill(255);
+  ellipse(0,0,360);
+  noStroke();
+  rect(120,120,80,80);
+  vel = vel * 0.985;
+  // image(img, 80, 80);
+}
 
+function mousePressed() {
+  vel += 0.6;
 }
 
 function keyPressed() {
@@ -23,9 +41,3 @@ function keyPressed() {
 	}
 }
 
-function mousePressed() {
-
-}
-
-function checkLevel() {
-}
