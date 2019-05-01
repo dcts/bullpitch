@@ -12,19 +12,20 @@ function setup() {
 	let myCanvas = createCanvas(wSize, wSize);
 	myCanvas.parent("main"); /* display scetch in html element with id "main"*/
   rectMode(CENTER);
+  imageMode(CENTER);
 }
 
 function draw() {
-  background(51);
+  background(255);
   angle += vel;
-  translate(250,250);
+  translate(250, 250);
   rotate(angle);
-  fill(255);
-  ellipse(0,0,360);
-  noStroke();
-  rect(120,120,80,80);
+  // fill(255);
+  // ellipse(0,0,360);
+  // noStroke();
+  // rect(120,120,80,80);
   vel = vel * 0.985;
-  // image(img, 80, 80);
+  image(img, 0, 0);
 }
 
 function mousePressed() {
