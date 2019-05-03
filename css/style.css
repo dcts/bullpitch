@@ -1,0 +1,23 @@
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat');*/
+@import url("components/header.css");
+@import url("components/spinner.css");
+@import url("components/textfield.css");
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  margin-top: 50px;
+  color: white;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+.bg-bullpitch {
+  background-color: #404040;
+}
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
