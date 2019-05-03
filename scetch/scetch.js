@@ -1,5 +1,5 @@
 // GLOBAL VARIABLES
-let wSize = 500 // window size
+let wSize = 350 // window size
 let angle = 0;
 let vel = 0;
 let img;
@@ -16,22 +16,22 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(64, 64, 64);
   angle += vel;
-  translate(250, 250);
-  rotate(angle);
   vel = vel * 0.985;
-  image(img, 0, 0, 500, 500);
-  if (mouseIsPressed) {
+  translate(wSize/2, wSize/2);
+  rotate(angle);
+  image(img, 0, 0, wSize, wSize);
+  if (mouseIsPressed && mouseX >= 50 && mouseX <= 250 && mouseY >= 50 && mouseY <= 250) {
     vel += 0.06;
     vel = Math.min(vel, 0.5);
   }
-  print(vel);
+  // print(mouseX);
 }
 
-function mousePressed() {
-  vel += 0.6;
-}
+// function mousePressed() {
+//   vel += 0.6;
+// }
 
 function keyPressed() {
   if (keyCode === LEFT_ARROW) {
