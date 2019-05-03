@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
   overflow: hidden;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #404040;
+  color: white;
 }
 canvas {
   margin:10px;

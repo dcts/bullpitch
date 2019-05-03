@@ -5,7 +5,7 @@ let vel = 0;
 let img;
 
 function preload() {
-  img = loadImage("scetch/res/wheel.png");
+  img = loadImage("scetch/res/spinner.png");
 }
 
 function setup() {
@@ -20,12 +20,13 @@ function draw() {
   angle += vel;
   translate(250, 250);
   rotate(angle);
-  // fill(255);
-  // ellipse(0,0,360);
-  // noStroke();
-  // rect(120,120,80,80);
   vel = vel * 0.985;
-  image(img, 0, 0);
+  image(img, 0, 0, 500, 500);
+  if (mouseIsPressed) {
+    vel += 0.06;
+    vel = Math.min(vel, 0.5);
+  }
+  print(vel);
 }
 
 function mousePressed() {
