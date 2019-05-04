@@ -11,7 +11,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.logo-img img{
+
+#light-img {
+  width: 61px;
+  margin: 15px auto;
+}
+
+#logo-img {
+  width: 189px;
+  margin: 25px auto;
+}
+
+.logo-container img {
   display: block;
 }
 
@@ -24,10 +35,12 @@ body {
   font-size: 41px;
   text-align: center;
   border-radius: 52px;
+  width: 70%;
+  margin: auto;
 }
 
 .main-container {
-  width: 500px;
+  width: 80%;
   margin: 0 auto;
 }
 
