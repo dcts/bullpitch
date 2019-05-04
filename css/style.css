@@ -21,3 +21,21 @@ h1 {
   margin: 0 auto;
   width: 100%;
 }
+.container-btn {
+  background-color: black;
+  width: 100%;
+  display: flex;
+
+}
+#btn-spinner {
+  background-color: red;
+  /*text-align: center;*/
+  margin: 0 auto;
+  width: 138px;
+  height: 138px;
+}
+
+.my-btn {
+  background-color: red;
+  color: black;
+}

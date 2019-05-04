@@ -3,11 +3,12 @@
   display: flex;
   margin-top: 55px;
 }
-.spinner > img {
+#spinner-img {
   width: 340px;
   height: 340px;
-  transition: transform 6s;
+  transition: transform 5s;
 }
-.spinner > img:hover {
-  transform: rotate(6126deg);
-}
+
+
+
+

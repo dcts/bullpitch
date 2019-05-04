@@ -30,16 +30,23 @@
 
       <!-- spinner -->
       <div class="spinner justify-content-center">
-        <img src="images/spinner.png">
+        <img id="spinner-img" src="images/spinner.png">
       </div>
       <br>
       <br>
       <br>
       <br>
 
+      <a class="my-btn">MY BUTTON</a>
+      <div class="container-btn">
+        <p onclick="spin();" id="btn-spinner">SPIN</p>
+      </div>
+
+
     <!-- </div> -->
 
     <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+    <script src="spin.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
