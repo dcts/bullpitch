@@ -4,38 +4,30 @@
 @import url("components/textfield.css");
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Bungee");
 
 body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  margin-top: 50px;
-  color: white;
-}
-h1 {
+  background-color: #2C2C2C;
   font-family: "Roboto", sans-serif;
 }
-.bg-bullpitch {
-  background-color: #404040;
-}
-.container-full {
-  margin: 0 auto;
-  width: 100%;
-}
-.container-btn {
-  background-color: black;
-  width: 100%;
-  display: flex;
 
-}
-#btn-spinner {
-  background-color: red;
-  /*text-align: center;*/
-  margin: 0 auto;
-  width: 138px;
-  height: 138px;
+.logo-img img{
+  display: block;
 }
 
-.my-btn {
-  background-color: red;
-  color: black;
+#bull-bar {
+  display: block;
+  background-color: white;
+  padding: 16px;
+  color: #2C2C2C;
+  text-decoration: none;
+  font-size: 41px;
+  text-align: center;
+  border-radius: 52px;
 }
+
+.main-container {
+  width: 500px;
+  margin: 0 auto;
+}
+

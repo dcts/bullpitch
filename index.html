@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,40 +7,48 @@
     <meta description="pitch your bullshit!">
 
     <title>Bullpitch!</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"> -->
   </head>
 
-  <body class="bg-bullpitch mt-0">
+  <body>
 
-    <!-- <div class="container container-full"> -->
-
+      <div class="main-container">
+        <div class="logo-img">
+          <img src="images/logo.png">
+          <img src="images/font.png">
+        </div>
+        <a href="#" id="bull-bar">Lost.ly</a>
+        <div class="spinner">
+          <img id="spinner-img" src="images/spinner.png">
+          <div>
+            <h1 onclick="spin();" id="btn-spinner">Pitch</h1>
+          </div>
+        </div>
+      </div>
       <!-- header -->
-      <div class="header">
-        <img id="logo" class="d-block mx-auto" src="images/logo.png">
-        <img id="font" class="d-block mx-auto" src="images/font.png">
-      </div>
+        <!--<div class="container">
+        <div class="header">
+          <img id="logo" src="images/logo.png">
+          <img id="font" src="images/font.png">
+        </div>
+        <div class="textfield m-auto d-flex justify-content-center">
+          <p>Lost.ly</p>
+        </div>
 
-      <!-- textfield -->
-      <div class="textfield m-auto d-flex justify-content-center">
-        <p>Lost.ly</p>
-      </div>
 
-      <!-- spinner -->
-      <div class="spinner justify-content-center">
-        <img id="spinner-img" src="images/spinner.png">
-      </div>
-      <br>
-      <br>
-      <br>
-      <br>
+        <div class="spinner justify-content-center">
+          <img id="spinner-img" src="images/spinner.png">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
 
-      <a class="my-btn">MY BUTTON</a>
-      <div class="container-btn">
-        <p onclick="spin();" id="btn-spinner">SPIN</p>
-      </div>
+        <a class="my-btn">MY BUTTON</a>
+        <div class="container-btn">
+          <p onclick="spin();" id="btn-spinner">SPIN</p>
+        </div>
+      </div> -->
 
 
     <!-- </div> -->
@@ -49,35 +56,6 @@
     <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
     <script src="spin.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
   </body>
 </html>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Spin The Wheel</title>
-	<!-- import p5.js -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js"></script>
-  <!-- import scetch! -->
-	<script src="scetch/scetch.js"></script>
-</head>
 
-<body>
-
-	<h1>Bullpitch</h1>
-  <p>pitch your bullshit</p>
-  <div id="main">
-    <!-- <button class="btn-spin">SPIN</button> -->
-  </div>
-</body>
-
-</html>
->>>>>>> master

@@ -1,14 +1,24 @@
 .spinner {
-  /*border: 1px red solid;*/
-  display: flex;
-  margin-top: 55px;
+  position: relative;
 }
+
 #spinner-img {
-  width: 340px;
-  height: 340px;
-  transition: transform 5s;
+  width: 350px;
+  height: 350px;
+  transition: transform 1s;
 }
 
-
-
-
+.spinner h1 {
+  font-size: 32px;
+  font-family: 'Bungee', cursive;
+  background-color: white;
+  color: black;
+  width: 138px;
+  height: 138px;
+  margin: 0;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 102px;
+  left: 102px;
+}
