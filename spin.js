@@ -11,7 +11,7 @@ function spin(evt) {
   $('#btn-spinner').click(function() {
     $('#spinner-img').css({
       'transform': `rotate(${nbrOfSpinDegrees}deg)`,
-      'transition-timing-function': 'cubic-bezier(0.6, -1.05, 0.6, 1)'
+      'transition-timing-function': selectBezier()
     });
   });
   count += 1;
