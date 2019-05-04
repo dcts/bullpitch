@@ -9,6 +9,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.logo-container {
+  margin: 25px;
+}
 
 #light-img {
   width: 61px;
@@ -38,7 +41,7 @@ body {
 }
 
 .main-container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 

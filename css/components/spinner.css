@@ -1,4 +1,7 @@
 .spinner {
+  width: 350px;
+  display: block;
+  margin: 50px auto;
   position: relative;
 }
 
@@ -19,6 +22,15 @@
   text-align: center;
   border-radius: 50%;
   position: absolute;
-  top: 102px;
-  left: 102px;
+  top: 106px;
+  left: 106px;
+  box-shadow: 0 0 15px rgba(0,0,0,.6);
+  box-sizing: border-box;
+  padding-top: 51px;
+}
+
+
+#spinner-img {
+  display: block;
+  margin: auto;
 }
