@@ -8,27 +8,32 @@
 #spinner-img {
   width: 350px;
   height: 350px;
-  transition: transform 1s;
+  transition: transform 5s;
 }
 
 .spinner h1 {
-  font-size: 32px;
+  font-size: 27px;
   font-family: 'Bungee', cursive;
   background-color: white;
   color: black;
-  width: 138px;
-  height: 138px;
+  width: 148px;
+  height: 148px;
   margin: 0;
   text-align: center;
   border-radius: 50%;
   position: absolute;
-  top: 106px;
-  left: 106px;
+  top: 101px;
+  left: 101px;
   box-shadow: 0 0 15px rgba(0,0,0,.6);
   box-sizing: border-box;
-  padding-top: 51px;
+  padding-top: 61px;
+  /*transition: box-shadow .05s ease-in;*/
+  letter-spacing: 4px;
 }
 
+.spinner h1:active {
+  box-shadow: 0 0 0 rgba(0,0,0,.0);
+}
 
 #spinner-img {
   display: block;
