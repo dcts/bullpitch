@@ -4,28 +4,35 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta description="pitch your bullshit!">
-
     <title>Bullpitch!</title>
+    <meta description="pitch your bullshit!">
+    <!-- LINK CSS STYLESHEET -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- FAVICON LINK -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <!-- ICON DISPLAYED WHEN ADDED TO HOMESCREEN -->
+    <!-- see here: https://webdesign.tutsplus.com/articles/quick-tip-give-your-website-an-ios-home-screen-icon--webdesign-10067 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon.png">
   </head>
 
   <body>
-
-      <div class="main-container">
-        <div class="logo-container">
-          <img id="light-img" src="images/logo.png">
-          <img id="logo-img" src="images/font.png">
-        </div>
-        <a href="#" id="bull-bar">Lost.ly</a>
-        <div class="spinner">
-          <img id="spinner-img" src="images/spinner.png">
-          <h1 onclick="spin();" id="btn-spinner">Pitch</h1>
-        </div>
+    <div class="main-container">
+      <div class="logo-container">
+        <img id="light-img" src="images/logo.png">
+        <img id="logo-img" src="images/font.png">
       </div>
-
-    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+      <a href="#" id="bull-bar">Lost.ly</a>
+      <div class="spinner">
+        <img id="spinner-img" src="images/spinner.png">
+        <h1 onclick="spin();" id="btn-spinner">Pitch</h1>
+      </div>
+    </div>
+    <!-- SPIN SCRIPT -->
     <script src="spin.js"></script>
+    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   </body>
 </html>
