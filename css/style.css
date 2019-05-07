@@ -7,41 +7,33 @@
 body {
   background-color: #2C2C2C;
   font-family: "Roboto", sans-serif;
+  margin: 0 auto:
 }
 
 .logo-container {
   margin: 25px;
+  margin-bottom: 40px;
 }
-
-#light-img {
-  width: 61px;
-  margin: 15px auto;
-}
-
 #logo-img {
-  width: 189px;
-  margin: 25px auto;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
 }
-
 .logo-container img {
   display: block;
 }
-
 #bull-bar {
-  display: block;
   background-color: white;
-  padding: 16px;
-  color: #2C2C2C;
-  text-decoration: none;
-  font-size: 41px;
-  text-align: center;
   border-radius: 52px;
+  padding: 12px;
+  color: #2C2C2C;
+  font-size: 10vw;
+  text-align: center;
   width: 70%;
+  max-width: 500px;
   margin: auto;
 }
 
-.main-container {
-  width: 100%;
-  margin: 0 auto;
-}
+
+
 

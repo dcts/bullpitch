@@ -19,7 +19,6 @@ function spin(evt) {
       document.getElementById('bull-bar').innerHTML = `${startupify()}` ; //setAttribute("class", "bigfont");
       document.getElementById('btn-spinner').innerHTML = "Pitch" ; //setAttribute("class", "bigfont");
     });
-
   });
   count += 1;
   // document.getElementById('bull-bar').innerHTML = "HELLO" ; //setAttribute("class", "bigfont");

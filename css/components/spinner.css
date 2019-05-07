@@ -1,16 +1,15 @@
 .spinner {
   width: 350px;
   display: block;
-  margin: 50px auto;
+  margin: 0 auto;
+  margin-top: 35px;
   position: relative;
 }
-
 #spinner-img {
   width: 350px;
   height: 350px;
-  transition: transform 5s;
+  transition: transform 1s;
 }
-
 .spinner h1 {
   font-size: 27px;
   font-family: 'Bungee', cursive;
@@ -18,7 +17,7 @@
   color: black;
   width: 148px;
   height: 148px;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   border-radius: 50%;
   position: absolute;
@@ -30,12 +29,7 @@
   /*transition: box-shadow .05s ease-in;*/
   letter-spacing: 4px;
 }
-
 .spinner h1:active {
   box-shadow: 0 0 0 rgba(0,0,0,.0);
 }
 
-#spinner-img {
-  display: block;
-  margin: auto;
-}
