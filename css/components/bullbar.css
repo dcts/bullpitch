@@ -1,0 +1,25 @@
+/*-------- BULLBAR --------*/
+.bull-bar-container {
+  height: 15%;              /* adjust percentage */
+  /*border: 5px solid blue;*/
+  display: flex;
+}
+#bull-bar {
+  background-color: white;
+  border-radius: 52px;
+  padding: 12px;
+  font-size: 34px;
+  text-align: center;
+  width: 70%;               /* adjust textfield length */
+  max-width: 400px;
+  height: 50%;
+  margin: auto;
+  box-shadow: 0 0 10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bull-bar > p {
+  color: #151515;/*#2C2C2C;*/
+}
+
