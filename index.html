@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bullpitch!</title>
-    <meta description="pitch your bullshit!">
+    <meta description="a game for entrepreneurs full of shit!">
     <!-- LINK CSS STYLESHEET -->
     <link rel="stylesheet" href="css/style.css">
     <!-- FAVICON LINK -->
@@ -19,21 +19,27 @@
   </head>
 
   <body>
-    <!-- <div class="main-container"> -->
-      <div class="logo-container">
-        <!-- <img id="light-img" src="images/logo.png"> -->
+
+    <div class="main-container">
+      <div class="header">
         <img id="logo-img" src="images/bullpitch-text.svg">
       </div>
-      <p id="bull-bar">- - - - -</p>
+      <div class="bull-bar-container">
+        <a id="bull-bar">
+          <p>- - - - -</p>
+        </a>
+      </div>
       <div class="spinner">
         <img id="spinner-img" src="images/spinner.png">
-        <h1 onclick="spin();" id="btn-spinner">Spin</h1>
+        <h1 onclick="spin();" id="btn-spinner">
+          Spin
+        </h1>
       </div>
-    <!-- </div> -->
+    </div>
 
     <!-- SPIN SCRIPT -->
     <script src="spin.js"></script>
-    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+    <!-- Including jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   </body>
 </html>

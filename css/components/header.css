@@ -1,0 +1,11 @@
+/*-------- HEADER ---------*/
+.header {
+  height: 13%;              /* adjust percentage */
+  /*border: 5px solid green;*/
+  display: flex;
+  justify-content: center;
+}
+#logo-img {
+  width: 40%;               /* resize "BULL PITCH" font logo */
+  margin-top: 23px;
+}
