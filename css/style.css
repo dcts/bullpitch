@@ -9,7 +9,6 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto:
 }
-
 .logo-container {
   margin: 25px;
   margin-bottom: 40px;
@@ -32,8 +31,14 @@ body {
   width: 70%;
   max-width: 400px;
   margin: auto;
+  box-shadow: 0 0 5px black;
 }
-
+/*.box-shadow {
+  box-shadow: 0 0 10px black;
+}
+.box-shadow-marked {
+  box-shadow: 0 0 10px #8BFFC7;
+}*/
 
 
 

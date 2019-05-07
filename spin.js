@@ -7,6 +7,9 @@ let count = 1;
  * transition function
  */
 function spin(evt) {
+  $('#bull-bar').css({
+    'box-shadow': '0 0 5px black'
+  });
   document.getElementById('btn-spinner').innerHTML = "Spin" ; //setAttribute("class", "bigfont");
   document.getElementById('bull-bar').innerHTML = "- - - - -" ; //setAttribute("class", "bigfont");
   nbrOfSpinDegrees = count * 2000 + Math.floor(Math.random()*360);
@@ -18,6 +21,9 @@ function spin(evt) {
     $("#spinner-img").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
       document.getElementById('bull-bar').innerHTML = `${startupify()}` ; //setAttribute("class", "bigfont");
       document.getElementById('btn-spinner').innerHTML = "Pitch" ; //setAttribute("class", "bigfont");
+      $('#bull-bar').css({
+        'box-shadow': '0px 0px 10px #8BFFC7'
+      });
     });
   });
   count += 1;
