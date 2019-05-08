@@ -10,10 +10,10 @@ body {
   margin: 0 auto;
   background-color: #151515;/*#2C2C2C;*/
   font-family: "Roboto", sans-serif;
-  /*height: 100vh;*/
+
 }
 .main-container {
-  /*border: 10px solid black;*/
+  /*border: 5px solid white;*/
   max-width: 600px;
   margin: 0 auto;
 }

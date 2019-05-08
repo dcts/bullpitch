@@ -5,10 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 #spinner-img {
   width: 100%;
   transition: transform 5s;
+  overflow: hidden;
+
 }
 #btn-spinner {
   font-size: 27px;
