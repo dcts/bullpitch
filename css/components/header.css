@@ -1,9 +1,10 @@
 /*-------- HEADER ---------*/
 .header {
-  height: 13%;              /* adjust percentage */
   /*border: 5px solid green;*/
 }
 .header > a {
+  /*border: 5px solid lightgreen;*/
+  height: 13%;              /* adjust percentage */
   display: flex;
   justify-content: center;
 }
