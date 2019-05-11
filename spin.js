@@ -30,7 +30,6 @@ function spin(evt) {
     });
   });
   count += 1;
-  // document.getElementById('bull-bar').innerHTML = "HELLO" ; //setAttribute("class", "bigfont");
 }
 
 /*
