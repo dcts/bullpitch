@@ -1,5 +1,5 @@
 # Bullpitch
 
-a drinking game for founders full of shit!
-landing page here: https://bullpitch.com/
-play it here: https://dcts.github.io/bullpitch/
+- a drinking game for founders full of shit!
+- [GO TO LANDING PAGE](https://bullpitch.com/)
+- [PLAY IT NOW](https://dcts.github.io/bullpitch/)
