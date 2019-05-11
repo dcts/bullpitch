@@ -2,6 +2,8 @@
 .header {
   height: 13%;              /* adjust percentage */
   /*border: 5px solid green;*/
+}
+.header > a {
   display: flex;
   justify-content: center;
 }
