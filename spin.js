@@ -1,36 +1,36 @@
-// counts the number of spins
-let count = 1;
+// console.log("HI from spin.js");
 
-/*
- * SPIN FUNCTION
- * rotates the spiner with a randomly selected bezier
- * transition function
- */
-function spin(evt) {
-  $('#spinner-img').attr('src', 'images/spinner.png');
-  $('#bull-bar').css({
-    'border': 'none'
+// random degree function (n = number of spins)
+const randomExtraSpins = n => Math.random()*n*360;
+const minSpinDegrees = 4 * 360; // 6 spins minimum!
+let degreeSpinSum = minSpinDegrees + randomExtraSpins(3); // 3 extra spins max!
+
+// initialize DOM objects
+const button = document.getElementById("btn-spinner");
+const spinner = document.getElementById("spinner-img");
+const bullbar = document.getElementById("bull-bar");
+
+// ON BUTTON CLICK -> SPIN THE WHEEL!
+button.addEventListener('click', (event) => {
+  // reset
+  bullbar.setAttribute("style", "border: none;");
+  spinner.innerHTML = "Spin";
+  bullbar.innerHTML = "- - - - -";
+
+  // calculate spinner degrees and spin! (transformation)
+  degreeSpinSum += minSpinDegrees + randomExtraSpins(3);
+  const selectedBezier = selectBezier();
+  let buildStyle = `transform: rotate(${degreeSpinSum}deg); transition-timing-function: ${selectedBezier}`;
+  spinner.setAttribute("style", buildStyle);
+
+  // wait for spinner transition to end
+  $("#spinner-img").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", () => {
+    bullbar.innerHTML = `${startupify()}` ; //setAttribute("class", "bigfont");
+    bullbar.setAttribute("style", "border: 5px solid #8BFFC7; transition: ease 0.25s;");
+    button.innerHTML = "Pitch" ; //setAttribute("class", "bigfont");
   });
-  document.getElementById('btn-spinner').innerHTML = "Spin" ; //setAttribute("class", "bigfont");
-  document.getElementById('bull-bar').innerHTML = "- - - - -" ; //setAttribute("class", "bigfont");
-  nbrOfSpinDegrees = count * 2000 + Math.floor(Math.random()*360);
-  $('#btn-spinner').click(function() {
-    $('#spinner-img').css({
-      'transform': `rotate(${nbrOfSpinDegrees}deg)`,
-      'transition-timing-function': selectBezier()
-    });
-    $("#spinner-img").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-      document.getElementById('bull-bar').innerHTML = `${startupify()}` ; //setAttribute("class", "bigfont");
-      document.getElementById('btn-spinner').innerHTML = "Pitch" ; //setAttribute("class", "bigfont");
-      $('#bull-bar').css({
-        'border': '5px solid #8BFFC7',
-        'transition': 'ease 0.25s'
-      });
-      // $('#spinner-img').attr('src', 'images/spinner-pitch.png');
-    });
-  });
-  count += 1;
-}
+});
+
 
 /*
  * SELECT BEZIER
@@ -39,11 +39,10 @@ function spin(evt) {
  */
 function selectBezier() {
   let sampleArray = [
-    "cubic-bezier(0.25, 0. 1, 0.25, 1)",
-    "cubic-bezier(.8, .1, 1, .04)",
+    "cubic-bezier(0.6, 1.5, 0.6, 1)",
     "cubic-bezier(.1, .9, .9, .1)",
     "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
-    "cubic-bezier(0.6, 1.5, 0.6, 1)"
+    "cubic-bezier(0.25, 0. 1, 0.25, 1)"
   ];
   return sampleArray[Math.floor(Math.random() * sampleArray.length)];
 }
@@ -595,4 +594,3 @@ function startupify() {
 //   arr.push(startupify(i));
 // }
 // console.log(arr);
-
