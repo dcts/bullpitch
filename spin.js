@@ -1,7 +1,7 @@
-// console.log("HI from spin.js");
-
 // random degree function (n = number of spins)
 const randomExtraSpins = n => Math.random()*n*360;
+
+// initialize degrees
 const minSpinDegrees = 4 * 360; // 6 spins minimum!
 let degreeSpinSum = minSpinDegrees + randomExtraSpins(3); // 3 extra spins max!
 
@@ -16,13 +16,11 @@ button.addEventListener('click', (event) => {
   bullbar.setAttribute("style", "border: none;");
   spinner.innerHTML = "Spin";
   bullbar.innerHTML = "- - - - -";
-
   // calculate spinner degrees and spin! (transformation)
   degreeSpinSum += minSpinDegrees + randomExtraSpins(3);
   const selectedBezier = selectBezier();
   let buildStyle = `transform: rotate(${degreeSpinSum}deg); transition-timing-function: ${selectedBezier}`;
   spinner.setAttribute("style", buildStyle);
-
   // wait for spinner transition to end
   $("#spinner-img").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", () => {
     bullbar.innerHTML = `${startupify()}` ; //setAttribute("class", "bigfont");
@@ -30,6 +28,7 @@ button.addEventListener('click', (event) => {
     button.innerHTML = "Pitch" ; //setAttribute("class", "bigfont");
   });
 });
+
 
 
 /*
@@ -46,6 +45,8 @@ function selectBezier() {
   ];
   return sampleArray[Math.floor(Math.random() * sampleArray.length)];
 }
+
+
 
 /*
  * STARTUPIFY
