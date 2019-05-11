@@ -1,6 +1,7 @@
 /*-------- SPINNER --------*/
 .spinner {
   height: 70%;              /* adjust percentage */
+  /*max-width: 100px;*/
   /*border: 5px solid red;*/
   display: flex;
   justify-content: center;
@@ -8,9 +9,13 @@
   overflow: hidden;
 }
 #spinner-img {
-  width: 100%;
+  /*width: 89vw;*/
+  width: 100vw;
+  height: 100vw;
+  max-width: 500px;
+  max-height: 500px;
   transition: transform 5s;
-  overflow: hidden;
+  /*overflow: hidden;*/
 
 }
 #btn-spinner {
@@ -23,8 +28,8 @@
   height: 148px;  /* alans design (will be overriden) */
   width: 38vw;    /* width as percentage of viewport WIDTH */
   height: 38vw;   /* width as percentage of viewport WIDTH */
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 200px;
+  max-height: 200px;
   margin: 0 auto;
   text-align: center;
   border-radius: 50%;
@@ -36,4 +41,13 @@
 }
 #btn-spinner h1:active {
   box-shadow: 0 0 0 rgba(0,0,0,.0);
+}
+
+/*@media (min-width: 500px) {
+  .spinner {
+    border: 5px solid red;
+  }*/
+/*  #spinner-img {
+    width: 500px;
+  }*/
 }

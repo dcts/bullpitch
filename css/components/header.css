@@ -7,5 +7,6 @@
 }
 #logo-img {
   width: 40%;               /* resize "BULL PITCH" font logo */
+  min-width: 150px;
   margin-top: 23px;
 }
