@@ -1,4 +1,5 @@
 # Bullpitch
 
-- fuck yeah! 
-- Spin..! The..! Wheel..! Spin..! The..! Wheel...! -> https://dcts.github.io/bullpitch/
+a drinking game for founders full of shit!
+landing page here: https://bullpitch.com/
+play it here: https://dcts.github.io/bullpitch/
