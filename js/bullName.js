@@ -1,26 +1,26 @@
 const endings = [
-  ".link",
-  ".hub",
-  ".io",
-  ".ly",
-  ".kick",
-  ".app",
-  ".now",
-  ".ify",
-  ".risk",
+  // VERBS
+  "kick",
+  "stop",
+  "able",
+  // NOUNS
+  "hub",
+  "link",
+  "tube",
+  "risk",
+  "now",
+  "job",
+  "scam",
+  "run",
+  // WEBSITES
+  "ly",
+  "ify",
   ".me",
-  ".able",
-  ".tube",
+  ".io",
+  ".app",
   ".it",
-  ".job",
-  ".co",
-  ".org",
   ".us",
-  ".crypto",
-  ".coin",
-  ".able",
-  ".it",
-  ".scam"
+  ".coin"
 ];
 
 const nouns = [
