@@ -24,7 +24,7 @@ button.addEventListener('click', (event) => {
   spinner.setAttribute("style", buildStyle);
   // wait for spinner to end transition!
   $("#spinner-img").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", () => {
-    bullbar.innerHTML = `${startupify()}`;
+    bullbar.innerHTML = `${bullName()}`;
     bullbar.setAttribute("style", "border: 5px solid #ABF9F7; transition: ease 0.25s;");
     button.innerHTML = "Pitch";
   });
