@@ -86,8 +86,6 @@ const bullName = () => {
   return capitalize(nouns[seedNoun]) + endings[seedEnd];
 };
 
-console.log(bullNames());
-
 
 
 
