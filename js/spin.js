@@ -5,7 +5,6 @@ const randomExtraSpins = n => Math.random()*n*360;
 const minSpinDegrees = 5 * 360; // 5 spins minimum!
 let degreeSpinSum = normalize(minSpinDegrees + randomExtraSpins(3)); // 3 extra spins max!
 
-
 // initialize DOM objects
 const button = document.getElementById("btn-spinner");
 const spinner = document.getElementById("spinner-img");
@@ -25,15 +24,16 @@ button.addEventListener('click', (event) => {
   console.log(selectedBezier);
   let buildStyle = `transform: rotate(${degreeSpinSum}deg); transition-timing-function: ${selectedBezier}`;
   spinner.setAttribute("style", buildStyle);
-  // wait for spinner to end transition!
-  $("#spinner-img").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", () => {
+});
+
+// ADD EVENTLISTENERS FOR "transitioned" event! (loop over all types of transitioned)
+"transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd".split(" ").forEach((event) => {
+  spinner.addEventListener(event, () => { // webkitTransitionEnd oTransitionEnd MSTransitionEnd"
     bullbar.innerHTML = `${bullName()}`;
     bullbar.setAttribute("style", "border: 5px solid #ABF9F7; transition: ease 0.25s;");
     button.innerHTML = "Pitch";
   });
-});
-
-
+})
 
 /*
  * SELECT BEZIER
@@ -51,10 +51,11 @@ function selectBezier() {
 }
 
 /*
- *
- *
+ * NORMALIZE
+ * lets the wheel stop at certain splitpoints (determined by nbrOfSplitpoints!)
  */
 function normalize(input) {
-  const interval = 360 / 8;
+  const nbrOdSplitpoints = 8;
+  const interval = 360 / nbrOdSplitpoints;
   return Math.floor(input/interval)*interval;
 }
