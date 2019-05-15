@@ -42,7 +42,6 @@ const nouns = [
   "sin",
   "heart",
   "day",
-  "you",
   "slap",
   "drugs",
   "pony",
