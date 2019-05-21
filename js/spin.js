@@ -18,6 +18,7 @@ button.addEventListener('click', (event) => {
   bullbar.setAttribute("style", "border: none;");
   spinner.innerHTML = "Spin";
   bullbar.innerHTML = "- - - - -";
+  resetCountdownTimer();
   // calculate spinner degrees and spin! (transformation)
   degreeSpinSum += normalize(minSpinDegrees + randomExtraSpins(3));
   const selectedBezier = selectBezier();
@@ -32,6 +33,7 @@ button.addEventListener('click', (event) => {
     bullbar.innerHTML = `${bullName()}`;
     bullbar.setAttribute("style", "border: 5px solid #ABF9F7; transition: ease 0.25s;");
     button.innerHTML = "Pitch";
+    startCountdownTimer();
   });
 })
 
