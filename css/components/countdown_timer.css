@@ -27,9 +27,8 @@ svg circle {
   stroke-dashoffset: 0px;
   stroke-linecap: round;
   stroke-width: 2px;
-  stroke: red;
+  stroke: white;
   fill: none;
-  animation: countdown 1s linear 1 forwards;
 }
 
 @keyframes countdown {
@@ -39,4 +38,9 @@ svg circle {
   to {
     stroke-dashoffset: 113px;
   }
+}
+
+.toggle-countdown {
+  animation: countdown 3s linear 1 forwards;
+  stroke: red;
 }
