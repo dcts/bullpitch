@@ -1,36 +1,33 @@
 // get needed elements (circle and numbers)!
 const svgCircle = document.getElementById("svg-circle");
 const countdownNumberEl = document.getElementById('countdown-number');
-
 // variables that track timer (digits)
+let countdown;
+let timerLoop;
 
-
-// add event listener to automatically reset timer! (maybe?)
-// TODO
-
-const timerNumbers = () => {
-
-  var countdown = 3;
-  countdownNumberEl.textContent = countdown;
-  let timerLoop = setInterval(function() {
-    countdown = --countdown;
-    countdownNumberEl.textContent = countdown;
-    if(countdown <= 0){
-      clearInterval(timerLoop);
-      document.getElementById("countdown-number").innerHTML = "-"
-    }
-  }, 1000);
-};
+// settings
+let nbrOfSecs = 3; // each reset or timerend will set the timer to this value!
 
 const startCountdownTimer = () => {
   console.log("triggered countdown timer now!");
   svgCircle.classList.add("toggle-countdown");
-  timerNumbers();
+  countdown = nbrOfSecs;
+  countdownNumberEl.textContent = countdown;
+  timerLoop = setInterval(function() {
+    countdown = --countdown;
+    countdownNumberEl.textContent = countdown;
+    if(countdown <= 0){
+      clearInterval(timerLoop);
+      resetCountdownTimer();
+    }
+  }, 1000);
 };
 
 const resetCountdownTimer = () => {
   console.log("resetting countdown timer now!");
   svgCircle.classList.remove("toggle-countdown");
   clearInterval(timerLoop);
+  countdown = nbrOfSecs;
+  countdownNumberEl.innerHTML = "-";
 };
 
