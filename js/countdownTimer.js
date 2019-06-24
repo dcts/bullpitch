@@ -1,25 +1,23 @@
 // get needed elements (circle and numbers)!
-const countdownDiv = document.getElementById("countdown");
-const countdownNumber = document.getElementById('countdown-number');
 const svgCircle = document.getElementById("svg-circle");
+const textInsideBttn = document.getElementById("btn-spinner");
 // variables that track timer (digits)
 let countdown;
 let timerLoop;
 
 // settings
-let nbrOfSecs = 3; // each reset or timerend will set the timer to this value!
+let nbrOfSecs = 45; // each reset or timerend will set the timer to this value!
 
 const startCountdownTimer = () => {
   console.log("triggered countdown timer now!");
-  // countdownDiv.setAttribute('style', 'visibility: visible;');
-  countdownDiv.style.visibility = "visible";
-  console.log(countdownDiv);
+  svgCircle.style.opacity = 1;
   svgCircle.classList.add("toggle-countdown");
   countdown = nbrOfSecs;
-  countdownNumber.textContent = countdown;
+  textInsideBttn.innerText = countdown;
+  textInsideBttn.style.color = "red";
   timerLoop = setInterval(function() {
     countdown = --countdown;
-    countdownNumber.textContent = countdown;
+    textInsideBttn.innerText = countdown;
     if(countdown <= 0){
       clearInterval(timerLoop);
       resetCountdownTimer();
@@ -32,7 +30,8 @@ const resetCountdownTimer = () => {
   svgCircle.classList.remove("toggle-countdown");
   clearInterval(timerLoop);
   countdown = nbrOfSecs;
-  countdownNumber.innerHTML = "-";
-  countdownDiv.style.visibility = "hidden"; // not needed
+  textInsideBttn.innerText = "SPIN";
+  textInsideBttn.style.color = "black";
+  svgCircle.style.opacity = 0;
 };
 

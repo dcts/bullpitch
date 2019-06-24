@@ -19,12 +19,15 @@
   font-family: 'Bungee', cursive;
   background-color: white;
   color: black;
-  width: 148px;   /* alans design (will be overriden) */
-  height: 148px;  /* alans design (will be overriden) */
-  width: 38vw;    /* width as percentage of viewport WIDTH */
-  height: 38vw;   /* height as percentage of viewport WIDTH */
-  max-width: 200px;
-  max-height: 200px;
+  /*
+  width: 148px;   /* alans design (will be overriden)
+  height: 148px;  /* alans design (will be overriden)
+  width: 38vw;    /* width as percentage of viewport WIDTH
+  height: 38vw;   /* height as percentage of viewport WIDTH
+  */
+  width: 142px;
+  height: 142px;
+  z-index: 3;
   margin: 0 auto;
   text-align: center;
   border-radius: 50%;
@@ -37,18 +40,3 @@
 #btn-spinner h1:active {
   box-shadow: 0 0 0 rgba(0,0,0,.0);
 }
-
-/*
-@media (max-width: 900px) and (orientation:landscape) {
-  .spinner {
-  }
-  #spinner-img {
-    width: auto;
-    height: 100%;
-  }
-  #btn-spinner {
-    max-width: 100px;
-    max-height: 100px;
-  }
-}
-*/

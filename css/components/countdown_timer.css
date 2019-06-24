@@ -8,22 +8,15 @@
   visibility: hidden;
 }
 
-#countdown-number {
-  color: red;
-  display: inline-block;
-  line-height: 40px;
-}
 
 svg {
   position: absolute;
-  /*top: 437px;
-  right: 215px;
-  */width: 160px;
+  width: 160px;
   height: 160px;
   transform: rotateY(-180deg) rotateZ(-90deg);
 }
-
 svg circle {
+  opacity: 0;
   stroke-dasharray: 475px;
   stroke-dashoffset: 0px;
   stroke-linecap: round;
@@ -31,7 +24,10 @@ svg circle {
   stroke: white;
   fill: none;
 }
-
+.toggle-countdown {
+  animation: countdown 45s linear 1 forwards;
+  stroke: red;
+}
 @keyframes countdown {
   from {
     stroke-dashoffset: 0px;
@@ -41,7 +37,4 @@ svg circle {
   }
 }
 
-.toggle-countdown {
-  animation: countdown 3s linear 1 forwards;
-  stroke: red;
-}
+
