@@ -16,18 +16,18 @@
 
 svg {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
+  /*top: 437px;
+  right: 215px;
+  */width: 160px;
+  height: 160px;
   transform: rotateY(-180deg) rotateZ(-90deg);
 }
 
 svg circle {
-  stroke-dasharray: 113px;
+  stroke-dasharray: 475px;
   stroke-dashoffset: 0px;
   stroke-linecap: round;
-  stroke-width: 2px;
+  stroke-width: 8px;
   stroke: white;
   fill: none;
 }
@@ -37,7 +37,7 @@ svg circle {
     stroke-dashoffset: 0px;
   }
   to {
-    stroke-dashoffset: 113px;
+    stroke-dashoffset: 475px;
   }
 }
 
