@@ -11,7 +11,7 @@
   width: 100%;
   max-width: 500px;
   max-height: 500px;
-  transition: transform 0.1s; /* FOR DE ONLY */
+  transition: transform 5s;
 }
 #btn-spinner {
   font-size: 27px;

@@ -15,6 +15,7 @@ svg {
   height: 160px;
 }
 svg circle {
+  opacity: 0;
   stroke-dasharray: 475px;
   stroke-dashoffset: 0px;
   stroke-linecap: round;
@@ -22,15 +23,15 @@ svg circle {
   fill: none;
   stroke: white; /* default is white! red one needs to be overridden */
 }
+/* red circle*/
 .svg-red {
   transform: rotateY(-180deg) rotateZ(-90deg);
 }
 .svg-red circle {
-  opacity: 0;
   stroke: red;
 }
 .toggle-countdown {
-  animation: countdown 45s linear 1 forwards;
+  animation: countdown 22s linear 1 forwards;
   stroke: red;
 }
 @keyframes countdown {
