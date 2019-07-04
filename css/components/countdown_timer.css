@@ -8,21 +8,26 @@
   visibility: hidden;
 }
 
-
+/* STYLINGS FOR BOTH SVG CIRCLES (white and red)! */
 svg {
   position: absolute;
   width: 160px;
   height: 160px;
-  transform: rotateY(-180deg) rotateZ(-90deg);
 }
 svg circle {
-  opacity: 0;
   stroke-dasharray: 475px;
   stroke-dashoffset: 0px;
   stroke-linecap: round;
   stroke-width: 8px;
-  stroke: white;
   fill: none;
+  stroke: white; /* default is white! red one needs to be overridden */
+}
+.svg-red {
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+.svg-red circle {
+  opacity: 0;
+  stroke: red;
 }
 .toggle-countdown {
   animation: countdown 45s linear 1 forwards;
