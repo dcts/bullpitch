@@ -9,6 +9,8 @@
     <!-- DISABLE LANDSCAPE MODE (didnt work) -->
     <!-- <meta http-equiv="ScreenOrientation" content="autoRotate:disabled"> -->
     <!-- <meta name="viewport" content="initial-scale=1.0, width=device-width" /> -->
+    <!-- DONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- FAVICON LINK -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <!-- ICON DISPLAYED WHEN ADDED TO HOMESCREEN -->
@@ -43,6 +45,10 @@
           <circle id="svg-circle-red" r="76" cx="80" cy="80"></circle>
         </svg>
       </div>
+
+      <div class="donate">
+        <a class="buy-beer" href="https://www.paypal.me/heyholmes">buy us a beer <i class="fa fa-beer"></i></a>
+      </div>
     </div>
 
     <!-- SPIN SCRIPT -->
@@ -52,3 +58,20 @@
   </body>
 </html>
 
+<style>
+  .donate {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    transition: all 0.2s ease-in-out;
+    width: 200px;
+  }
+  .buy-beer {
+    color: white;
+    text-decoration: none;
+  }
+  .donate:hover {
+    transform: scale(1.1);
+  }
+</style>
