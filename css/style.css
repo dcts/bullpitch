@@ -2,6 +2,7 @@
 @import url("components/header.css");
 @import url("components/bullbar.css");
 @import url("components/spinner.css");
+@import url("components/countdown_timer.css");
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url("https://fonts.googleapis.com/css?family=Bungee");
