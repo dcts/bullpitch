@@ -36,7 +36,6 @@ const nouns = [
   "plan",
   "wish",
   "sniff",
-  "fuck",
   "hand",
   "talk",
   "sin",
