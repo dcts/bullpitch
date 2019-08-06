@@ -1,7 +1,6 @@
 /*-------- BULLBAR --------*/
 .bull-bar-container {
   height: 15%;              /* adjust percentage */
-  /*border: 5px solid blue;*/
   display: flex;
 }
 #bull-bar {
@@ -20,6 +19,6 @@
   align-items: center;
 }
 #bull-bar > p {
-  color: #151515;/*#2C2C2C;*/
+  color: #151515;
 }
 
