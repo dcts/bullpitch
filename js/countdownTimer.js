@@ -10,7 +10,6 @@ let timerLoop;
 let nbrOfSecs = 22; // each reset or timerend will set the timer to this value!
 
 const startCountdownTimer = () => {
-  console.log("triggered countdown timer now!");
   svgCircleWhite.style.opacity = 1;
   svgCircleRed.style.opacity = 1;
   svgCircleRed.classList.add("toggle-countdown");
@@ -28,7 +27,6 @@ const startCountdownTimer = () => {
 };
 
 const resetCountdownTimer = () => {
-  console.log("resetting countdown timer now!");
   svgCircleRed.classList.remove("toggle-countdown");
   clearInterval(timerLoop);
   countdown = nbrOfSecs;

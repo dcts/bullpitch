@@ -9,12 +9,11 @@
 
 body {
   margin: 0 auto;
-  background-color: #151515;/*#2C2C2C;*/
+  background-color: #151515;
   font-family: "Roboto", sans-serif;
-
 }
+
 .main-container {
-  /*border: 5px solid white;*/
   max-width: 600px;
   margin: 0 auto;
 }

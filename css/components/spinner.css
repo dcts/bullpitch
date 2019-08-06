@@ -1,6 +1,5 @@
 /*-------- SPINNER --------*/
 .spinner {
-  /*border: 5px solid red;*/
   height: 70%;              /* adjust percentage */
   display: flex;
   justify-content: center;
@@ -19,12 +18,6 @@
   font-family: 'Bungee', cursive;
   background-color: white;
   color: black;
-  /*
-  width: 148px;   /* alans design (will be overriden)
-  height: 148px;  /* alans design (will be overriden)
-  width: 38vw;    /* width as percentage of viewport WIDTH
-  height: 38vw;   /* height as percentage of viewport WIDTH
-  */
   width: 142px;
   height: 142px;
   z-index: 3;
