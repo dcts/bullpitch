@@ -1,0 +1,18 @@
+.donate {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  transition: all 0.2s ease-in-out;
+  width: 200px;
+  position: relative;
+}
+.buy-beer {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: -30px;
+}
+.donate:hover {
+  transform: scale(1.1);
+}
