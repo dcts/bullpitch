@@ -4,6 +4,9 @@ const spinner = document.getElementById("spinner-img");
 const bullbar = document.getElementById("bull-bar");
 let counter = 0; // count the number of spins (to get bullnames with no repetition)
 
+// for analytics
+const visitorId = createVisitorId();
+
 // ON BUTTON CLICK -> SPIN THE WHEEL!
 button.addEventListener('click', (event) => {
   // reset
@@ -21,10 +24,12 @@ button.addEventListener('click', (event) => {
 // ADD EVENTLISTENERS FOR "transitioned" event! (loop over all types of transitioned)
 "transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd".split(" ").forEach((event) => {
   spinner.addEventListener(event, () => { // webkitTransitionEnd oTransitionEnd MSTransitionEnd"
-    bullbar.innerHTML = `${bullNameWithSeed(counter++)}`;
+    const bullName = `${bullNameWithSeed(counter++)}`
+    bullbar.innerHTML = bullName;
     bullbar.setAttribute("style", "border: 5px solid #ABF9F7; transition: ease 0.25s;");
     button.innerHTML = "Pitch";
     startCountdownTimer();
+    trackAnalytics(visitorId, bullName);
   });
 })
 
